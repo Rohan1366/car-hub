@@ -11,7 +11,7 @@
   justify-content: center;
   height: 550px;
   width: 35%;
-  filter: drop-shadow(0 0 1.75rem crimson);
+  filter: drop-shadow(0 0 1.75rem rgb(20, 157, 220));
   padding-top: 30px;
   border-radius: 60px;
   background-color: white;
@@ -57,7 +57,7 @@
   width: 300px;
   height: 50px;
   border-radius: 60px;
-  box-shadow: inset 0px 0px 25px 0px #888;
+  box-shadow: inset 0px 0px 25px 0px rgb(136, 136, 136);
 }
 
 .second-input {
@@ -77,10 +77,12 @@
 
 .login-btn {
   padding-top: 20px;
+  cursor: pointer;
 }
 
 .reg-link {
   padding-top: 10px;
+  cursor: pointer;
 }
 
 .mail-id {

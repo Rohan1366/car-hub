@@ -23,7 +23,7 @@ export const CarDetails = () => {
 
   const fetchCarDetails = async () => {
     try {
-      const response = await axios.get('/viewcars');
+      const response = await axios.get('https://carhub2.onrender.com/viewcars');
       const carDetails = response.data.carDetails.map((car) => ({
         ...car,
         bulletPoints: JSON.parse(car.bulletPoints),
@@ -35,7 +35,7 @@ export const CarDetails = () => {
   };
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`/deletecars/${id}`);
+      await axios.delete(`https://carhub2.onrender.com/deletecars/${id}`);
       fetchCarDetails();
     } catch (error) {
       console.error(error);
@@ -53,7 +53,7 @@ export const CarDetails = () => {
   
   const handleEdit = async (id) => {
     try {
-      await axios.patch(`/updatecars/${id}`,editValues[id]);
+      await axios.patch(`https://carhub2.onrender.com/updatecars/${id}`,editValues[id]);
       fetchCarDetails();
     } catch (error) {
       console.error(error);

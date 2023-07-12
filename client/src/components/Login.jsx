@@ -41,7 +41,7 @@ export const Login = () => {
         return;
       }
       try {
-        const url = '/auth/login';
+        const url = 'https://carhub2.onrender.com/auth/login';
         const { data } = await axios.post(url, fdata);
         console.log(data);
         localStorage.setItem('token', data.token);

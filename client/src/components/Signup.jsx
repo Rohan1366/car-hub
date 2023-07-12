@@ -46,7 +46,7 @@ export const Signup = () => {
           return;
         }
         try {
-          let url = "/auth/signup";
+          let url = "https://carhub2.onrender.com/auth/signup";
           const { data } = await axios.post(url, formData);
           console.log(data);
           nav("/login");
